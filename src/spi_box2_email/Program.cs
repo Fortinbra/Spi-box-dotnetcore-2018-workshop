@@ -43,9 +43,9 @@ namespace spi_box2_email
         public static void SendEmail(string picturePath)
         {
             SmtpClient client = new SmtpClient("smpt.mailtrap.io");
-            client.Credentials = new NetworkCredential("6086a10cf20db6", "94f7aaeaf9c156");
+            client.Credentials = new NetworkCredential("", "");
             client.Port = 25;
-            using (var message = new MailMessage("thegundamguru@gmail.com", "thegundamguru@yahoo.com")
+            using (var message = new MailMessage("", "")
             {
                 Subject = "Danger Will Robinson",
                 Body = "Motion Detected"
